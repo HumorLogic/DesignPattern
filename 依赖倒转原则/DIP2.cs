@@ -4,26 +4,26 @@ using System.Text;
 
 namespace DesignPattern
 {
-    public class Client
-    {
-        static void Main(string[] args)
-        {
-            ToggleSwitch ts = new ToggleSwitch();
-            BulbLight bl = new BulbLight();
-            TubeLight tl = new TubeLight();
-            TV tv = new TV();
+    //public class Client
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        ToggleSwitch ts = new ToggleSwitch();
+    //        BulbLight bl = new BulbLight();
+    //        TubeLight tl = new TubeLight();
+    //        TV tv = new TV();
 
-            ts.Switch(tv);
-            ts.Switch(tv);
+    //        ts.Switch(tv);
+    //        ts.Switch(tv);
 
-            ts.Switch(bl);
-            ts.Switch(bl);
+    //        ts.Switch(bl);
+    //        ts.Switch(bl);
 
-            ts.Switch(tl);
-            ts.Switch(tl);
+    //        ts.Switch(tl);
+    //        ts.Switch(tl);
 
-        }
-    }
+    //    }
+    //}
 
 
     public class ToggleSwitch

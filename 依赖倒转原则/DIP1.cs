@@ -5,23 +5,23 @@ using System.Text;
 namespace NotUseDesignPattern
 {
 
-    public class Client
-    {
+    //public class Client
+    //{
 
-        //static void Main(string[] args)
-        //{
-        //    ToggleSwitch ts = new ToggleSwitch();
-        //    Light light = new Light();
-        //    TV tv = new TV();
+    //    static void Main(string[] args)
+    //    {
+    //        ToggleSwitch ts = new ToggleSwitch();
+    //        Light light = new Light();
+    //        TV tv = new TV();
 
-        //    ts.SwitchLight(light);
-        //    ts.SwitchLight(light);
+    //        ts.SwitchLight(light);
+    //        ts.SwitchLight(light);
 
-        //    ts.SwitchTV(tv);
-        //    ts.SwitchTV(tv);
+    //        ts.SwitchTV(tv);
+    //        ts.SwitchTV(tv);
 
-        //}
-    }
+    //    }
+    //}
 
    
     public class ToggleSwitch
