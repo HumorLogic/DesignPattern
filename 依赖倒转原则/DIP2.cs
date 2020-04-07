@@ -24,24 +24,24 @@ namespace DesignPattern
 
         }
     }
-    
 
-public class ToggleSwitch
-{
-    public void Switch(ISwitchable device)
+
+    public class ToggleSwitch
     {
-        if (device.IsOn)
-            device.TurnOff();
-        else
-            device.TurnOn();
+        public void Switch(ISwitchable device)
+        {
+            if (device.IsOn)
+                device.TurnOff();
+            else
+                device.TurnOn();
 
-        device.IsOn = !device.IsOn;
+            device.IsOn = !device.IsOn;
+        }
+
     }
 
-}
 
-
-public interface ISwitchable
+    public interface ISwitchable
     {
         bool IsOn { get; set; }
         void TurnOn();
@@ -50,7 +50,7 @@ public interface ISwitchable
 
     public class TV : ISwitchable
     {
-        public bool IsOn { get ; set ; }
+        public bool IsOn { get; set; }
 
         public void TurnOff()
         {
