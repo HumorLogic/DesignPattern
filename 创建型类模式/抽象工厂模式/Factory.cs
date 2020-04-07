@@ -9,20 +9,20 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
-            Shape shape;
-            
-            
-            AbstractFactory factoryA = new ShapeFactory();
-            shape= factoryA.GetShape("Rectangle");
-            shape.Draw();
-            shape = factoryA.GetShape("Square");
-            shape.Draw();
+            Phone phone;
+            PC pc;
+            AbstractFactory xiaomiF = new XiaoMiFactory();
+            phone = xiaomiF.CreatePhone();
+            phone.Call();
+            pc = xiaomiF.CreatePC();
+            pc.Play();
 
-            AbstractFactory factoryB = new RoundedShapeFactory();
-            shape = factoryB.GetShape("Rectangle");
-            shape.Draw();
-            shape = factoryB.GetShape("Square");
-            shape.Draw();
+            AbstractFactory huaweiF = new HuaweiFactory();
+            phone = huaweiF.CreatePhone();
+            phone.Call();
+
+            pc = huaweiF.CreatePC();
+            pc.Play();
 
         }
     }
@@ -31,37 +31,36 @@ namespace DesignPattern
 
     public interface AbstractFactory
     {
-        Shape GetShape(string shapeType);
+        Phone CreatePhone();
+        PC CreatePC();
+
     }
 
-    public class ShapeFactory : AbstractFactory
+    public class XiaoMiFactory : AbstractFactory
     {
-        public Shape GetShape(string shapeType)
+
+
+        public PC CreatePC()
         {
-            if (shapeType == "Rectangle")
-            {
-                return new Rectangle();
-            }else if (shapeType == "Square")
-            {
-                return new Square();
-            }
-            return null;
+            return new XiaomiPC();
+        }
+
+        public Phone CreatePhone()
+        {
+            return new XiaomiPhone();
         }
     }
 
-    public class RoundedShapeFactory : AbstractFactory
+    public class HuaweiFactory : AbstractFactory
     {
-        public Shape GetShape(string shapeType)
+        public PC CreatePC()
         {
-            if (shapeType == "Rectangle")
-            {
-                return new RoundedRectangle();
-            }
-            else if (shapeType == "Square")
-            {
-                return new RoundedSquare();
-            }
-            return null;
+            return new HuaweiPC();
+        }
+
+        public Phone CreatePhone()
+        {
+            return new HuaweiPhone();
         }
     }
 

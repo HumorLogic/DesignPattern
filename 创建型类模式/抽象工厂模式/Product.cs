@@ -4,42 +4,47 @@ using System.Text;
 
 namespace DesignPattern
 {
-    public abstract class Shape
+    public abstract class Phone
     {
-        public abstract void Draw();
+        public abstract void Call();
     }
 
-
-    public class Rectangle : Shape
+    public abstract class PC
     {
-        public override void Draw()
+        public abstract void Play();
+    }
+
+    public class XiaomiPhone : Phone
+    {
+        public override void Call()
         {
-            Console.WriteLine("Draw Rectangle ");
+            Console.WriteLine("xiaomi phone call");
+        }
+
+       
+    }
+
+    public class HuaweiPhone : Phone
+    {
+        public override void Call()
+        {
+            Console.WriteLine("huawei phone call");
         }
     }
 
-    public class Square : Shape
+    public class XiaomiPC : PC
     {
-        public override void Draw()
+        public override void Play()
         {
-            Console.WriteLine("Draw Square ");
+            Console.WriteLine("xiaomi PC play");
         }
     }
 
-    public class RoundedSquare : Shape
+    public class HuaweiPC : PC
     {
-        public override void Draw()
+        public override void Play()
         {
-            Console.WriteLine("Draw RoundedSquare ");
-
-        }
-    }
-
-    public class RoundedRectangle : Shape
-    {
-        public override void Draw()
-        {
-            Console.WriteLine("Draw RoundedRectangle ");
+            Console.WriteLine("huawei PC play");
         }
     }
 }
