@@ -5,17 +5,17 @@ using System.Text;
 namespace DesignPattern.FacadePattern.Example1
 {
 
-    class program
-    {
-        static void Main(string[] args)
-        {
-            ShapeMaker shapeMaker = new ShapeMaker();
+    //class program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        ShapeMaker shapeMaker = new ShapeMaker();
 
-            shapeMaker.DrawCircle();
-            shapeMaker.DrawSquare();
-            shapeMaker.DrawRectangle();
-        }
-    }
+    //        shapeMaker.DrawCircle();
+    //        shapeMaker.DrawSquare();
+    //        shapeMaker.DrawRectangle();
+    //    }
+    //}
 
 
     public class ShapeMaker
