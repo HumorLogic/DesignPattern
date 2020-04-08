@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignPattern.行为型模式.观察者模式.Example1
+namespace DesignPattern.ObserverPattern.Example1
 {
 
     class program
@@ -11,9 +11,10 @@ namespace DesignPattern.行为型模式.观察者模式.Example1
         {
             Subject subject = new Subject();
 
+            Observer hexObs = new HexObservar();
             subject.Attach(new BinaryObservar());
             subject.Attach(new OctalObservar());
-            subject.Attach(new HexObservar());
+            subject.Attach(hexObs);
 
             subject.SetState(10);
             Console.WriteLine("\n");
@@ -22,6 +23,10 @@ namespace DesignPattern.行为型模式.观察者模式.Example1
             Console.WriteLine("\n");
 
             subject.SetState(555);
+            Console.WriteLine("\n");
+
+            subject.Detach(hexObs);
+            subject.SetState(66);
             Console.WriteLine("\n");
         }
     }
