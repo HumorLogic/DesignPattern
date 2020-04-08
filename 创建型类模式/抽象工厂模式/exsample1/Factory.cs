@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignPattern
+namespace DesignPattern.创建型类模式.抽象工厂模式.exsample1
 {
 
     public class Client
@@ -19,13 +19,13 @@ namespace DesignPattern
     }
     class Program
     {
-        static void Main(string[] args)
-        {
-            Client client = new Client();
-            client.ClientMethod(new HuaweiFactory());
-            client.ClientMethod(new XiaoMiFactory());
+        //static void Main(string[] args)
+        //{
+        //    Client client = new Client();
+        //    client.ClientMethod(new HuaweiFactory());
+        //    client.ClientMethod(new XiaoMiFactory());
 
-        }
+        //}
     }
 
 

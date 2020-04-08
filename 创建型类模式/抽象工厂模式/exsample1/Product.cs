@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignPattern
+namespace DesignPattern.创建型类模式.抽象工厂模式.exsample1
 {
     public abstract class Phone
     {
