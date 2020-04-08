@@ -10,7 +10,7 @@
 
 ## 2. 面向对象设计7大原则 
 
-|   原则    | 内容   |
+|   原则&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; | 内容   |
 | :--------|:-----| 
 |**①单一职责原则SRP**|<ol><li>一个类应该有一个，且只有一个引起改变的原因，这意味着一个类应该只有一个职责。</li></ol> | 
 |**②开放-封闭原则OCP**|<ol><li>软件(包括类、模块、函数等）应该能够做到可扩展，但不能不修改它。</li></ol>|
