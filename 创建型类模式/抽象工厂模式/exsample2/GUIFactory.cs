@@ -10,22 +10,22 @@ namespace DesignPattern.AbstractFactoryPattern.Example2
 
     class program
     {
-        static void Main(string[] args)
-        {
-            ApplicationConfigurator configurator = new ApplicationConfigurator();
-            Application app = configurator.GetApp();
-            app.CreateUI();
-            app.ButtonPaint();
-            app.CheckboxPaint();
+        //static void Main(string[] args)
+        //{
+        //    ApplicationConfigurator configurator = new ApplicationConfigurator();
+        //    Application app = configurator.GetApp();
+        //    app.CreateUI();
+        //    app.ButtonPaint();
+        //    app.CheckboxPaint();
 
-            configurator.SetOS("Mac");
-            app = configurator.GetApp();
-            app.CreateUI();
-            app.ButtonPaint();
-            app.CheckboxPaint();
+        //    configurator.SetOS("Mac");
+        //    app = configurator.GetApp();
+        //    app.CreateUI();
+        //    app.ButtonPaint();
+        //    app.CheckboxPaint();
 
 
-        }
+        //}
     }
 
 
