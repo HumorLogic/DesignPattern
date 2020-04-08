@@ -20,8 +20,6 @@ namespace DesignPattern
         {
             Console.WriteLine("xiaomi phone call");
         }
-
-       
     }
 
     public class HuaweiPhone : Phone
@@ -47,4 +45,6 @@ namespace DesignPattern
             Console.WriteLine("huawei PC play");
         }
     }
+
+
 }

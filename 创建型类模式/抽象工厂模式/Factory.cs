@@ -7,36 +7,36 @@ namespace DesignPattern
 
     public class Client
     {
+        public void ClientMethod(IAbstractFactory factory)
+        {
+            var phone = factory.CreatePhone();
+            var pc = factory.CreatePC();
+
+            phone.Call();
+            pc.Play();
+        }
+
+    }
+    class Program
+    {
         static void Main(string[] args)
         {
-            Phone phone;
-            PC pc;
-            AbstractFactory xiaomiF = new XiaoMiFactory();
-            phone = xiaomiF.CreatePhone();
-            phone.Call();
-            pc = xiaomiF.CreatePC();
-            pc.Play();
-
-            AbstractFactory huaweiF = new HuaweiFactory();
-            phone = huaweiF.CreatePhone();
-            phone.Call();
-
-            pc = huaweiF.CreatePC();
-            pc.Play();
+            Client client = new Client();
+            client.ClientMethod(new HuaweiFactory());
+            client.ClientMethod(new XiaoMiFactory());
 
         }
     }
-  
 
 
-    public interface AbstractFactory
+    public interface IAbstractFactory
     {
         Phone CreatePhone();
         PC CreatePC();
 
     }
 
-    public class XiaoMiFactory : AbstractFactory
+    public class XiaoMiFactory : IAbstractFactory
     {
 
 
@@ -51,7 +51,7 @@ namespace DesignPattern
         }
     }
 
-    public class HuaweiFactory : AbstractFactory
+    public class HuaweiFactory : IAbstractFactory
     {
         public PC CreatePC()
         {
