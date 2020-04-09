@@ -4,18 +4,19 @@ using System.Text;
 
 namespace DesignPattern.IteratorPattern.Example1
 { 
-    class program
-    {
-        static void Main(string[] args)
-        {
-            NameRepository nameRepository = new NameRepository();
-            for(Iterator iter = nameRepository.CreateIterator(); iter.HasMore();)
-            {
-                string name = (string)iter.GetNext();
-                Console.WriteLine(name);
-            }
-        }
-    }
+
+    //class program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        NameRepository nameRepository = new NameRepository();
+    //        for(Iterator iter = nameRepository.CreateIterator(); iter.HasMore();)
+    //        {
+    //            string name = (string)iter.GetNext();
+    //            Console.WriteLine(name);
+    //        }
+    //    }
+    //}
 
 
 
