@@ -5,14 +5,14 @@ using DesignPattern.AbstractFactoryPattern.Example2;
 
 namespace DesignPattern.创建型类模式.工厂方法模式.Example1
 {
-  class program
-    {
-        static void Main(string[] arg)
-        {
-            Application app = new Application();
-            app.Main();
-        }
-    }
+  //class program
+  //  {
+  //      static void Main(string[] arg)
+  //      {
+  //          Application app = new Application();
+  //          app.Main();
+  //      }
+  //  }
 
 
     public class Application
