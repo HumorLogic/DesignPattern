@@ -31,20 +31,20 @@ namespace DesignPattern.结构型模式.组合模式.Example1
 
     class program
     {
-        static void Main(string[] arg)
-        {
+        //static void Main(string[] arg)
+        //{
 
-            ImageEditor imageEditor = new ImageEditor();
-            imageEditor.Load();
+            //ImageEditor imageEditor = new ImageEditor();
+            //imageEditor.Load();
 
-            Graphic[] graphics =  { new Dot(9, 9), new Circle(2, 2, 6) };
-            imageEditor.GroupSelected(graphics);
+            //Graphic[] graphics =  { new Dot(9, 9), new Circle(2, 2, 6) };
+            //imageEditor.GroupSelected(graphics);
 
-            Graphic[] graphics2 = { new Dot(88, 1), new Circle(100, 1, 8), new Circle(4, 4, 6) };
-            imageEditor.GroupSelected(graphics2);
+            //Graphic[] graphics2 = { new Dot(88, 1), new Circle(100, 1, 8), new Circle(4, 4, 6) };
+            //imageEditor.GroupSelected(graphics2);
 
 
-        }
+        //}
     }
     public interface Graphic
     {
