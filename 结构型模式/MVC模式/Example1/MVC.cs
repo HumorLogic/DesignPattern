@@ -7,26 +7,24 @@ namespace DesignPattern.MVC_Pattern.Example1
 
     class program
     {
-        public static void Main(string[] arg)
-        {
-            Student model = RetriveStudentFromDatebase();
-            StudentView view = new StudentView();
-            StudentController controller = new StudentController(model, view);
+        //public static void Main(string[] arg)
+        //{
+        //    Student model = RetriveStudentFromDatebase();
+        //    StudentView view = new StudentView();
+        //    StudentController controller = new StudentController(model, view);
 
-            controller.UpdateView();
-            Console.WriteLine("\n");
+        //    controller.UpdateView();
+        //    Console.WriteLine("\n");
             
-            controller.SetStudentName("John");
-            controller.UpdateView();
-            Console.WriteLine("\n");
+        //    controller.SetStudentName("John");
+        //    controller.UpdateView();
+        //    Console.WriteLine("\n");
 
-            controller.SetStudentRollNo("18");
-            controller.UpdateView();
-            Console.WriteLine("\n");
+        //    controller.SetStudentRollNo("18");
+        //    controller.UpdateView();
+        //    Console.WriteLine("\n");
 
-
-
-        }
+        //}
 
         private static Student RetriveStudentFromDatebase()
         {

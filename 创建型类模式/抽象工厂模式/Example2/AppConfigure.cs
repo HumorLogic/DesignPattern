@@ -14,7 +14,7 @@ namespace DesignPattern.AbstractFactoryPattern.Example2
 
         public void SetOS(string os)
         {
-            if (os == "Windows" || os == "Mac")
+            if (os == "Windows" || os == "Mac" || os == "Web")
             {
                 OS = os;
             }
@@ -29,6 +29,11 @@ namespace DesignPattern.AbstractFactoryPattern.Example2
         //Application app = new Application(new WinFactory());
         Config config;
         GUIFactory factory;
+
+        public ApplicationConfigurator(){
+            config = new Config();
+        }
+
        void main()
         {
             config = ReadApplicationConfiFile();
@@ -59,7 +64,7 @@ namespace DesignPattern.AbstractFactoryPattern.Example2
             return new Application(factory);
         }
 
-        Config ReadApplicationConfiFile()
+        public Config ReadApplicationConfiFile()
         {
             if (config == null)
                 return new Config();
