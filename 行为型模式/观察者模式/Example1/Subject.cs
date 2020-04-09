@@ -5,31 +5,31 @@ using System.Text;
 namespace DesignPattern.ObserverPattern.Example1
 {
 
-    class program
-    {
-        static void Main(string[] args)
-        {
-            Subject subject = new Subject();
+    //class program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        Subject subject = new Subject();
 
-            Observer hexObs = new HexObservar();
-            subject.Attach(new BinaryObservar());
-            subject.Attach(new OctalObservar());
-            subject.Attach(hexObs);
+    //        Observer hexObs = new HexObservar();
+    //        subject.Attach(new BinaryObservar());
+    //        subject.Attach(new OctalObservar());
+    //        subject.Attach(hexObs);
 
-            subject.SetState(10);
-            Console.WriteLine("\n");
+    //        subject.SetState(10);
+    //        Console.WriteLine("\n");
 
-            subject.SetState(100);
-            Console.WriteLine("\n");
+    //        subject.SetState(100);
+    //        Console.WriteLine("\n");
 
-            subject.SetState(555);
-            Console.WriteLine("\n");
+    //        subject.SetState(555);
+    //        Console.WriteLine("\n");
 
-            subject.Detach(hexObs);
-            subject.SetState(66);
-            Console.WriteLine("\n");
-        }
-    }
+    //        subject.Detach(hexObs);
+    //        subject.SetState(66);
+    //        Console.WriteLine("\n");
+    //    }
+    //}
     public class Subject
     {
         private List<Observer> observers = new List<Observer>();
