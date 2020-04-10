@@ -4,19 +4,19 @@ using System.Text;
 
 namespace DesignPattern.结构型模式.适配器模式.Example2
 {
-    class program
-    {
-        static void Main(string[] arg)
-        {
-            AudioPlayer audioPlayer = new AudioPlayer();
+    //class program
+    //{
+    //    static void Main(string[] arg)
+    //    {
+    //        AudioPlayer audioPlayer = new AudioPlayer();
 
-            audioPlayer.Play("mp3", "东风破.mp3");
-            audioPlayer.Play("mp4", "黑暗森林.mp4");
-            audioPlayer.Play("vlc", "far far away.vlc");
-            audioPlayer.Play("avi", "mind me.avi");
-            audioPlayer.Play("MP4", "mind me.mp4");
-        }
-    }
+    //        audioPlayer.Play("mp3", "东风破.mp3");
+    //        audioPlayer.Play("mp4", "黑暗森林.mp4");
+    //        audioPlayer.Play("vlc", "far far away.vlc");
+    //        audioPlayer.Play("avi", "mind me.avi");
+    //        audioPlayer.Play("MP4", "mind me.mp4");
+    //    }
+    //}
 
    public interface MediaPlayer
     {
