@@ -7,22 +7,22 @@ namespace DesignPattern.行为型模式.命令模式.Example2
 
     class program
     {
-        static void Main(string[] arg)
-        {
+        //static void Main(string[] arg)
+        //{
 
-            Stock abcStock = new Stock();
+            //Stock abcStock = new Stock();
 
-            BuyStock buyStockOrder = new BuyStock(abcStock);
-            SellStock sellStockOrder = new SellStock(abcStock);
+            //BuyStock buyStockOrder = new BuyStock(abcStock);
+            //SellStock sellStockOrder = new SellStock(abcStock);
 
-            Broker broker = new Broker();
-            broker.TakeOrder(buyStockOrder);
-            broker.TakeOrder(sellStockOrder);
+            //Broker broker = new Broker();
+            //broker.TakeOrder(buyStockOrder);
+            //broker.TakeOrder(sellStockOrder);
 
-            broker.PlaceOrders();
+            //broker.PlaceOrders();
 
 
-        }
+        //}
     }
 
     public interface Order
