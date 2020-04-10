@@ -5,17 +5,17 @@ using System.Text;
 namespace DesignPattern.创建型类模式.单例模式.Example1
 {
 
-    class program
-    {
-        static void Main(string[] arg)
-        {
-            Database db = Database.GetInstance();
-            Database db2 = Database.GetInstance();
-            db.QueryMemory();
-            db.Save(500);
-            db2.QueryMemory();
-        }
-    }
+    //class program
+    //{
+    //    static void Main(string[] arg)
+    //    {
+    //        Database db = Database.GetInstance();
+    //        Database db2 = Database.GetInstance();
+    //        db.QueryMemory();
+    //        db.Save(500);
+    //        db2.QueryMemory();
+    //    }
+    //}
     public  class Database
     {
 
